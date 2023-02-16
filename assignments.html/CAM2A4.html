@@ -1,0 +1,359 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+           box-sizing: border-box; 
+        }
+        body{
+            margin: 0%;
+        }
+        
+        .l1{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            background-color: #efeff1;
+            padding: 0% 12%;
+        }
+        .logo{
+            padding: 1% 12%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .navbar{
+            padding: 0% 12%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        .navbar a{
+            color: black;
+            text-decoration: none;
+        }
+        .navbar :hover{
+            background-color: #ff8800;
+            color: white;
+        }
+        .l3{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #efeff1;
+            margin-top: 1%;
+            padding: 2% 18% 2% 12%;
+            
+        }
+        .form{
+            
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        input{
+            padding: 5px;
+            width: 120px;
+            border-radius: 8px;
+            border: 1px solid #dddddf;
+        }
+        form button{
+            border-radius: 5px;
+            background-color: #ff8800;
+            border: none;
+            color: white;
+            width: 250px;
+            padding: 5px;
+        }
+        .l4{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            background-color: #209bde;
+            padding: 2% 18% 2% 12%;
+            gap: 10%;
+            align-items: center;
+        }
+
+        .l4>div>button{
+            width: 150px;
+            color: #209bde;
+            padding: 10%
+        }
+        .l5{
+            /* display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; */
+            display: grid;
+            grid-template-columns: 220px 220px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #efeff1;
+            padding: 2% 18% 2% 12%;
+            /* gap: 5%; */
+        }
+        .learn{
+            color: #555555;
+            }
+        .learn button{
+            background-color: #ff8800;
+            border: none;
+            color: white;
+            width: 120px;
+            padding: 3%;
+        }
+        .l6{
+            height: fit-content;
+        }
+        .Project{
+            /* display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; */
+            display: grid;
+            grid-template-columns: 220px 220px 220px;
+            justify-content: space-between;
+            padding: 2% 18% 2% 12%;
+            align-items: center;
+            
+        }
+        .l6 button{
+            background-color: #ff8800;
+            border: none;
+            color: white;
+            width: 120px;
+            padding: 5%;
+        }
+        .learnmore{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 0% 0% 5%;
+        }
+        .footer{
+            background-color: #959595;
+        }
+        .foot{
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+            padding: 2% 18% 2% 12%;
+        }
+        .foot a{
+            text-decoration: none;
+            color: white;
+        }
+        .copyright{
+            background-color: #707070;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: #8f8f8f;
+            width: 100%;
+        }
+        @media screen and (max-width:500px) {
+            .foot{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6,1fr);
+            }
+            .l4{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+
+            }
+            .l5{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .Project{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+               }
+
+    </style>
+    <title>Shopping Site</title>
+</head>
+<body>
+    <div class="main">
+        <div class="l1">
+            <div>
+            <img src="https://www.svgrepo.com/download/494438/shopping-cart.svg" alt="" width="25px"> Shopping Cart
+           </div>
+        <div>
+        <img src="https://www.svgrepo.com/download/410389/user.svg" alt="" width="25px"> Sign In/ Register
+        </div>
+        </div>
+        <div class="l2">
+            <div class="logo">
+                <div>
+                    <img src="shopping site.png" alt="" width="90px">
+                </div>
+                <div>
+                       <h1 style="color: #848484;">512-219-8000</h1> 
+                </div>
+            </div>
+            <div class="navbar">
+                <a href="#">Yard Signs</a>
+                <a href="#">Banners</a>
+                <a href="#">Accesories</a>
+                <a href="#">Gallery</a>
+                <a href="#">About</a>
+                <a href="#">Price</a>
+                <a href="#">Materials</a>
+                <a href="#">FAQ</a>
+                <a href="#">Custom Quote</a>
+            </div>
+        </div>
+        <div class="l3">
+            <div class="headline" style="width:50%">
+                <h1>Big Headline</h1>
+                <h2>Smaller Subhead Here</h2>
+                <p>And this is text copied pasted over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over</p>
+                <button style="border-radius: 5px; border: none;background-color: #ff8800;color: white;">Get Started</button>
+            </div>
+            <div class="form">
+                <form>
+                <input type="text" placeholder="First Name:" value="">
+                <input type="text" placeholder="Last Name:" value="">
+                <br><br>
+                <input type="email" placeholder="Email:" value="">
+                <input type="tel" placeholder="Mobile Number" value="">
+                <br><br>
+                <textarea id="" cols="30" rows="3" placeholder="Message"></textarea>
+                <br>
+                <button>SEND</button>
+                </form>
+            </div>
+        </div>
+        <div class="l4">
+            <div style="color: white;">
+                <h2>This is where an Awesome Title Goes</h1>
+                    <p>And this text copied pasted over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over</p>
+            </div>
+            <div>
+                <button><strong>Design It Now</strong></button>
+            </div>
+        </div>
+        <div class="l5">
+            <div class="img2">
+                <img src="files1676030611766-img (1).jpg"  alt=""width="400px"height="290px">
+            </div>
+            <div class="learn">
+                <h1>Watch This</h1>
+                <h2>It's a video,yo!</h2>
+                <p>And this is text copied pasted over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="l6">
+            <div class="Project">
+            <div class="p1">
+                <div class="image">
+                <img src="download21.jpeg" alt="" width="150px" height="100px">
+                </div>
+                <div class="text">
+                <h4>Project One</h4>
+                <p>Donec ipsum velit, porttitor in nulla quis, condimentum scelerisque purus. Proin bibendum ex tellus.</p>
+                </div>
+            </div>
+            <div class="p2">
+                <div class="image">
+                <img src="download20.jpeg" alt="" width="150px" height="100px">
+                </div>
+                <div class="text">
+                <h4>Project Two</h4>
+                <p>Donec ipsum velit, porttitor in nulla quis, condimentum scelerisque purus. Proin bibendum ex tellus.</p>
+                </div>
+            </div>
+            <div class="p3">
+                <div class="image">
+                <img src="download23.jpeg" alt="" width="150px">
+                </div>
+                <div class="text">
+                <h4>Project Three</h4>
+                <p>Donec ipsum velit, porttitor in nulla quis, condimentum scelerisque purus. Proin bibendum ex tellus,.</p>
+                </div>
+            </div>
+            </div>
+            <div class="learnmore">
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot">
+                <div class="col1">
+                    <a href="#">Help</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">F.A.Q</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Redeem Promo</a>
+                    <a href="#">Account</a>
+                    <a href="#">My Account</a>
+                </div>
+                <div class="col2">
+                    <a href="#">Product</a>
+                    <a href="#">Yard sign</a>
+                    <a href="#">Rea Estate Signs</a>
+                    <a href="#">Vinyl Banners</a>
+                    <a href="#">Car Magnetics</a>
+                    <a href="#">Banner Stands</a>
+                    <a href="#">Accesories</a>
+                    <a href="#">Design Serivces</a>
+                </div>
+                <div class="col3">
+                    <a href="#">Company</a>
+                    <a href="#">Overview</a>
+                    <a href="#">Press Room</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Affilate</a>
+                </div>
+                <div class="col4">
+                    <a href="#">Help</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">F.A.Q</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Redeem Promo</a>
+                    <a href="#">Account</a>
+                    <a href="#">My Account</a>
+                </div>
+                <div class="col5">
+                    <a href="#">Product</a>
+                    <a href="#">Yard sign</a>
+                    <a href="#">Rea Estate Signs</a>
+                    <a href="#">Vinyl Banners</a>
+                    <a href="#">Car Magnetics</a>
+                    <a href="#">Banner Stands</a>
+                    <a href="#">Accesories</a>
+                    <a href="#">Design Serivces</a>
+                </div>
+                <div class="col6">
+                    <a href="#">Company</a>
+                    <a href="#">Overview</a>
+                    <a href="#">Press Room</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Affilate</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright@2016 SignDepotATX.com</p>
+            </div>
+            </div>
+    </div>
+    <hr>
+</body>
+</html>
